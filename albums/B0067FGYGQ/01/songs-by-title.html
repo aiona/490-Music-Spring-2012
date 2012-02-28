@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<title>Songs</title>
+  </head>
+  <body>
+  	<ol id="Songs"> 		
+  		 <li class="songs">
+  			<a href="/Users/adamiona/490-Music-Spring-2012/song.html" rel="song">Warsaw</a>
+  		</li>
+  	</ol>
+  </body>
+  
+  <!-- state transition to find songs with a given title -->
+<form method="get" action="/albums/?song-title={song-title}/" class="songs-by-title">
+	<input type="song" name="song-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+</html>

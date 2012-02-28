@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<title>Music</title>
+  </head>
+  <body>
+  	<ol id="Albums">
+  		<li class=albums">
+  			<a href="/Users/adamiona/490-Music-Spring-2012/albums/B0067FGYGQ/album.html" rel="album">Tramp</a>
+  		</li>
+  		<li class="albums">
+  			<a href="voyageur.html" rel="album">Voyageur</a>
+  		</li>
+  		<li class="albums">
+  			<a href="ceremonials.html" rel="album">Ceremonials</a>
+  		</li>
+  		<li class="albums">
+  			<a href="el-camino.html" rel="album">El Camino</a>
+  		</li>
+  		<li class="albums">
+  			<a href="face-control.html" rel="album">Face Control</a>
+  		</li>
+  		<li class="albums">
+  			<a href="grace.html" rel="album">Grace</a>
+  		</li>
+  	</ol>
+ 
+  <!-- state transition to add a new album -->
+<form method="post" action="/albums/{ASIN}/" class="add-album">
+	<input type="album" name="album-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+    <!-- state transition to find albums with a given title -->
+<form method="get" action="/albums/?album-title={album-title}/" class="albums-by-title">
+	<input type="album" name="album-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+<!-- state transition to find albums from a given year-->
+<form method="get" action="/albums/year={year}/" class="albums-by-year">
+	<input type="album" name="album-year" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+  <!-- state transition to find songs with a given title -->
+<form method="get" action="/albums/?song-title={song-title}/" class="songs-by-title">
+	<input type="song" name="song-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+</body>  
+</html>
