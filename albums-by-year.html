@@ -6,5 +6,24 @@
   <body>
   	<ol id="Albums"> 		
   		<li class="albums">
-  			<a href="/albums/{ASIN}/tramp.html" rel="album">Tramp</a>
+  			<a href="/Users/adamiona/490-Music-Spring-2012/albums/B0067FGYGQ/album.html" rel="album">Tramp</a>
   		</li>
+  		<li class="albums">
+  			<a href="/albums/{ASIN}/voyageur.html" rel="album">Voyageur</a>
+  		</li>
+  		<li class="albums">
+  			<a href="/albums/{ASIN}/attack-on-memory.html" rel="album">Attack On Memory</a>
+  		</li>
+  		<li class="albums">
+  			<a href="/albums/{ASIN}/reign-of-terror.html" rel="album">Reign Of Terror</a>
+  		</li>
+  	</ol>
+  	
+  	    <!-- state transition to find albums from a given year-->
+<form method="get" action="/albums/year={year}/" class="albums-by-year">
+	<input type="album" name="album-year" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+  	
+  </body>
+</html>
