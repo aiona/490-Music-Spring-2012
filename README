@@ -1,0 +1,45 @@
+ID Attribute Values
+
+Tracklist: the ordered list of songs on an album
+
+Albums: a list of albums, or a subset matching certain criteria
+
+Bands: a list of bands
+
+Songs: a list of songs, or a subset matching certain criteria
+
+
+Class Attribute Values
+
+Bands: a list of bands
+
+Songs: a list of songs
+
+Albums: a list of albums, or those matching certain criteria
+
+Albums-By-Title: used for searching for an album(s) with a given title
+
+Albums-By-Year: finding albums recorded in a given year
+
+Add-Album: used for adding a new album to the list
+
+Songs-By-Title: songs with a given title
+
+
+Rel Attribute Values
+
+Song:one individual song; can be part of a tracklist or an individual item
+
+Album: applied when viewing an album page or a list of albums
+
+Band: entity who created a song or album
+
+
+Name: 
+
+Album-Title: title of an album
+
+Album-Year: year an album was released
+
+Song-Title: title of song
+
