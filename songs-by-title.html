@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<title>Songs by Title</title>
+  </head>
+  <body>
+  	<ol id="Songs"> 		
+  		 <li class="songs">
+  			<a href="song.html" rel="song">Warsaw</a>
+  			<src="1-01 Warsaw.m4a" autostart=false hidden=true>
+  		</li>
+  	</ol>
+  </body>
+  
+  <!-- state transition to find songs with a given title -->
+  <h2>Songs With A Given Title</h2>
+<form method="get" action="/albums/?song-title={song-title}/" class="songs-by-title">
+	<input type="song" name="song-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+</html>

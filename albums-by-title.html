@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<title>Albums By Title</title>
+  </head>
+  <body>
+  <ol id="Albums">
+  		<li class="albums">
+  			<a href="album.html" rel="album">"Tramp" by Sharon Van Etten</a>
+  		</li>
+  	</ol>
+  
+    <!-- state transition to find albums with a given title -->
+<form method="get" action="/albums/?album-title={album-title}/" class="albums-by-title">
+	<h4>Album Title</h4>
+	<input type="album" name="album-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+</body>
+
+  
+</html>

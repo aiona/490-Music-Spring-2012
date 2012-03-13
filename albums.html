@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<title>Music</title>
+  </head>
+  
+<h1>Albums</h1>
+<body>
+  <h1>Albums</h1>
+  	<ol id="Albums">
+  		<li class=albums">
+  			<a href="/Users/adamiona/490-Music-Spring-2012/albums/B0067FGYGQ/album.html" rel="album">Tramp</a> by Sharon Van Etten
+  		</li>
+  		<li class="albums">
+  			<a href="voyageur.html" rel="album">Voyageur</a> by Kathleen Edwards
+  		</li>
+  		<li class="albums">
+  			<a href="ceremonials.html" rel="album">Ceremonials</a> by Florence and the Machine
+  		</li>
+  		<li class="albums">
+  			<a href="el-camino.html" rel="album">El Camino</a> by The Black Keys
+  		</li>
+  		<li class="albums">
+  			<a href="face-control.html" rel="album">Face Control</a> by The Handsome Furs
+  		</li>
+  		<li class="albums">
+  			<a href="grace.html" rel="album">Grace</a> by Jeff Buckley
+  		</li>
+  	</ol>
+ 
+  <!-- state transition to add a new album -->
+<h2>Add a New Album</h2>
+<form method="post" action="/albums/{ASIN}/" class="add-album">
+	<h4>Album Title</h4>
+	<input type="album" name="album-title" value="" required="true"/>
+	<h4>Artist</h4>
+	<input type="album" name="album-artist" value="" required="true"/>
+	<h4>Year</h4>
+	<input type="album" name="year" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+<h2>Find Albums with a Given Title</h2>
+    <!-- state transition to find albums with a given title -->
+    <h4>Album Title</h4>
+<form method="get" action="/albums/?album-title={album-title}/" class="albums-by-title">
+	<input type="album" name="album-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+<!-- state transition to find albums from a given year-->
+<h2>Find Albums From a Given Year</h2>
+	<h4>Album Year</h4>
+<form method="get" action="/albums/year={year}/" class="albums-by-year">
+	<input type="album" name="album-year" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+  <!-- state transition to find songs with a given title -->
+  <h2>Find Songs with a Given Title</h2>
+  <h4>Song Title</h4>
+<form method="get" action="/albums/?song-title={song-title}/" class="songs-by-title">
+	<input type="song" name="song-title" value="" required="true"/>
+	<input type="submit" value="send" />
+</form>
+
+</body>  
+</html>
